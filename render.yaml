@@ -2,6 +2,7 @@ services:
 - type: web
   name: hasura
   env: docker
+  plan: free
   autoDeploy: false
   healthCheckPath: /healthz
   envVars:
@@ -20,3 +21,4 @@ services:
 #    generateValue: true
 databases:
 - name: hasura
+  plan: free
